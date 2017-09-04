@@ -56,6 +56,6 @@ io.on('connection', function(socket){
   });
 });
 
-http.listen(6969, function(){
-  console.log('Server started. Listening on *:6969');
+http.listen(process.env.PORT || 6969, function(){
+  console.log('Server started.');
 });
